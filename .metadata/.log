@@ -1,0 +1,27 @@
+!SESSION 2020-11-08 10:22:22.270 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:24.293
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pullout
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:29.070
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pullout
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:29.074
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pushin
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:33.157
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pullout
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:33.161
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pushin
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:33.778
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pullout
+
+!ENTRY org.eclipse.ui 4 4 2020-11-08 10:26:33.782
+!MESSAGE Plug-in 'org.eclipse.ajdt.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.eclipse.ajdt.ui.action.pushin
