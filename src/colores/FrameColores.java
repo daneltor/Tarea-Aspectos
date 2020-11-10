@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.JCheckBox;
 
 public class FrameColores {
 
@@ -47,16 +48,26 @@ public class FrameColores {
 		frmObservableColors.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmObservableColors.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("Color Amarillo");
-		btnNewButton.setBackground(Color.YELLOW);
+		JCheckBox chckbxNewCheckBox = new JCheckBox("Invertir color");
+		chckbxNewCheckBox.setBounds(184, 208, 97, 23);
+		chckbxNewCheckBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {				
+				invertColor(frmObservableColors.getContentPane().getBackground());
+			}
+		});
+		frmObservableColors.getContentPane().add(chckbxNewCheckBox);
+		
+		
+		JButton btnNewButton = new JButton("Color Verde");
+		btnNewButton.setBackground(Color.GREEN);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
-				changeColor(Color.YELLOW);
+				changeColor(Color.GREEN);
 			}
 		});
 		btnNewButton.setBounds(24, 150, 124, 23);
 		frmObservableColors.getContentPane().add(btnNewButton);
-		
+
 		JButton btnNewButton_1 = new JButton("Color Azul");
 		btnNewButton_1.setForeground(Color.WHITE);
 		btnNewButton_1.setBackground(Color.BLUE);
@@ -82,5 +93,10 @@ public class FrameColores {
 	
 	void changeColor(Color c) {
 		frmObservableColors.getContentPane().setBackground(c);
+	}
+	
+	void invertColor(Color c) {
+		Color cInv = new Color(255-c.getRed(), 255-c.getGreen(), 255-c.getBlue());
+		frmObservableColors.getContentPane().setBackground(cInv);
 	}
 }

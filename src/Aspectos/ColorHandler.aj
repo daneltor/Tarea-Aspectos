@@ -13,13 +13,18 @@ public aspect ColorHandler {
     	imprimir(c);
     }
     
+    pointcut success1(): call(** invertColor(**));
+    after(): success1(){
+    	System.out.println("Color invertido");
+    }
+    
     void imprimir(Color color) {
     	System.out.println(mapa.get(color));
     }
     
     Map<Color, String> getConfig(){
     	Map<Color,String> response = new HashMap<>();
-    	response.put(Color.YELLOW, "Amarillo");
+    	response.put(Color.GREEN, "Verde");
     	response.put(Color.BLUE, "Azul");
     	response.put(Color.RED, "Rojo");
     	return response;
