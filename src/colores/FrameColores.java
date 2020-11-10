@@ -39,6 +39,9 @@ public class FrameColores {
 	 */
 	private void initialize() {
 		frmObservableColors = new JFrame();
+		//frmObservableColors.getContentPane().setBackground(Color.YELLOW);
+		//frmObservableColors.getContentPane().setBackground(Color.BLUE);
+		//frmObservableColors.getContentPane().setBackground(Color.RED);
 		frmObservableColors.setTitle("Observable Colors");
 		frmObservableColors.setBounds(100, 100, 450, 300);
 		frmObservableColors.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,7 +50,8 @@ public class FrameColores {
 		JButton btnNewButton = new JButton("Color Amarillo");
 		btnNewButton.setBackground(Color.YELLOW);
 		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) {				
+				frmObservableColors.getContentPane().setBackground(Color.YELLOW);
 			}
 		});
 		btnNewButton.setBounds(24, 150, 124, 23);
@@ -56,12 +60,22 @@ public class FrameColores {
 		JButton btnNewButton_1 = new JButton("Color Azul");
 		btnNewButton_1.setForeground(Color.WHITE);
 		btnNewButton_1.setBackground(Color.BLUE);
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {				
+				frmObservableColors.getContentPane().setBackground(Color.BLUE);
+			}
+		});
 		btnNewButton_1.setBounds(175, 150, 106, 23);
 		frmObservableColors.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Color Rojo");
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setBackground(Color.RED);
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {				
+				frmObservableColors.getContentPane().setBackground(Color.RED);
+			}
+		});
 		btnNewButton_2.setBounds(307, 150, 106, 23);
 		frmObservableColors.getContentPane().add(btnNewButton_2);
 	}
