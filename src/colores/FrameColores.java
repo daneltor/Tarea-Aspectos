@@ -51,7 +51,7 @@ public class FrameColores {
 		btnNewButton.setBackground(Color.YELLOW);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
-				frmObservableColors.getContentPane().setBackground(Color.YELLOW);
+				changeColor(Color.YELLOW);
 			}
 		});
 		btnNewButton.setBounds(24, 150, 124, 23);
@@ -62,7 +62,7 @@ public class FrameColores {
 		btnNewButton_1.setBackground(Color.BLUE);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
-				frmObservableColors.getContentPane().setBackground(Color.BLUE);
+				changeColor(Color.BLUE);
 			}
 		});
 		btnNewButton_1.setBounds(175, 150, 106, 23);
@@ -73,10 +73,14 @@ public class FrameColores {
 		btnNewButton_2.setBackground(Color.RED);
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
-				frmObservableColors.getContentPane().setBackground(Color.RED);
+				changeColor(Color.RED);
 			}
 		});
 		btnNewButton_2.setBounds(307, 150, 106, 23);
 		frmObservableColors.getContentPane().add(btnNewButton_2);
+	}
+	
+	void changeColor(Color c) {
+		frmObservableColors.getContentPane().setBackground(c);
 	}
 }
