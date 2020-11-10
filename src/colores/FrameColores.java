@@ -5,10 +5,11 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class FrameColores {
 
-	private JFrame frame;
+	private JFrame frmObservableColors;
 
 	/**
 	 * Launch the application.
@@ -18,7 +19,7 @@ public class FrameColores {
 			public void run() {
 				try {
 					FrameColores window = new FrameColores();
-					window.frame.setVisible(true);
+					window.frmObservableColors.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -37,25 +38,31 @@ public class FrameColores {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmObservableColors = new JFrame();
+		frmObservableColors.setTitle("Observable Colors");
+		frmObservableColors.setBounds(100, 100, 450, 300);
+		frmObservableColors.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmObservableColors.getContentPane().setLayout(null);
 		
 		JButton btnNewButton = new JButton("Color Amarillo");
+		btnNewButton.setBackground(Color.YELLOW);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton.setBounds(33, 150, 124, 23);
-		frame.getContentPane().add(btnNewButton);
+		btnNewButton.setBounds(24, 150, 124, 23);
+		frmObservableColors.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Color Azul");
-		btnNewButton_1.setBounds(191, 150, 106, 23);
-		frame.getContentPane().add(btnNewButton_1);
+		btnNewButton_1.setForeground(Color.WHITE);
+		btnNewButton_1.setBackground(Color.BLUE);
+		btnNewButton_1.setBounds(175, 150, 106, 23);
+		frmObservableColors.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Color Rojo");
+		btnNewButton_2.setForeground(Color.WHITE);
+		btnNewButton_2.setBackground(Color.RED);
 		btnNewButton_2.setBounds(307, 150, 106, 23);
-		frame.getContentPane().add(btnNewButton_2);
+		frmObservableColors.getContentPane().add(btnNewButton_2);
 	}
 }
